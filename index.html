@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous"
+        >
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        >
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Cheval Product</title>
+        <style>
+      .jumbotron {
+        text-align: center;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        text-shadow: 2px 2px #000;
+      }
+      .lead span {
+        color: orange;
+        font-weight: bold;
+      }
+
+      .bg-cover {
+        background-image: url('assets/img/cheval.jpg');
+        background-size: cover;
+        color: white;
+        background-position: center center;
+        position: relative;
+        z-index: -2;
+      }
+
+      .overlay {
+        background-color: #000;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+      }
+        </style>
+        <link rel="stylesheet" href="/bs5 /assets/css/style.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Cheval</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="mx-auto"></ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FREE SHIPPING - INDONESIA</a>
+                        </li>
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron bg-cover">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1 class="display-3 mb-1">Cheval Store</h1>
+            <p class="lead">
+                Website
+                <span>Offical Cheval Store</span>
+            </p>
+        </div>
+    </div>
+    <!-- end jumbotron -->
+    <br>
+    <br>
+    <!--about-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img src="assets/img/cheval.jpg" width="600" height="347">
+            </div>
+            <div class="col-md-4">
+                <h1>Cheval Product ?</h1>
+                <p>adalah brand pakaian wanita ukuran besar yang kasual dan smart. Merek kami pertama berdiri pada tahun 1989 dan semenjak itu kami telah berkembang dan tumbuh secara signifikan menawarkan berbagai aneka produk dan style. CHEVAL menwarkan pakaian berkualitas dengan potongan dan fitting yang pas.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- our team -->
+    <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>FREE SHIPPING - INDONESIA</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="card shadow-lg bg-dark">
+                        <img src="assets/img/product/product1.jpg" class="card-img-top h-img" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Luna Blazer</h4>
+                            <a
+                                href="javascript:void(0);"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalProfile1"
+                                class="btn btn-outline-light"
+                            >View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="card shadow-lg bg-dark">
+                        <img src="assets/img/product/product2.jpg" class="card-img-top h-img" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">CHEVAL Blouse 03</h4>
+                            <a
+                                href="javascript:void(0);"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalProfile2"
+                                class="btn btn-outline-light"
+                            >View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end our team -->
+        <!-- Contact -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <input class="form-control" placeholder="Email Address" type="email">
+                </div>
+                <div class="col-md-6 mb-2">
+                    <input class="form-control" placeholder="Name" type="text">
+                </div>
+                <div class="col-md-12 mb-2">
+                    <textarea class="form-control" placeholder="Pesan anda"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary btn-block w-100 mt-2">Kirim</button>
+                </div>
+                <div class="col-md-6">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ducimus!</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+        <!-- Modals -->
+        <div
+            class="modal fade"
+            id="modalProfile1"
+            tabindex="-1"
+            aria-labelledby="modalProfile1"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-items-center align-items-center">
+                                <img class="w-100" src="assets/img/product/product1.jpg">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Luna Blazer</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="d-flex flex-row-reverse justify-contents-end w-100">
+                                    <span class="btn-social btn-ig">
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                    <span class="btn-social btn-wa">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </span>
+                                    <span class="btn-social btn-fb">
+                                        <i class="fab fa-facebook"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade"
+            id="modalProfile2"
+            tabindex="-1"
+            aria-labelledby="modalProfile2"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-items-center align-items-center">
+                                <img class="w-100" src="assets/img/product/product2.jpg">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>CHEVAL Signature Blouse 03</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="d-flex flex-row-reverse justify-contents-end w-100">
+                                    <span class="btn-social btn-ig">
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                    <span class="btn-social btn-wa">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </span>
+                                    <span class="btn-social btn-fb">
+                                        <i class="fab fa-facebook"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modals -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    </body>
+</html>
