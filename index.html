@@ -10,48 +10,98 @@
 </head>
 
 <body>
-
-
-    <!--homepage-->
-    <div class="banner">
-        <div class="navbar">
-            <h1 class="h1">Cheval</h1>
-            <ul>
+    <div class="main">
+        <img src="assets/img/img-home.png" alt="Woman's leg" class="banner">
+        <nav class="navbar">
+            <a href="/" class="brand font-oswald">
+                CHEVAL
+            </a>
+            <ul class="navigation font-poppins">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Product</a></li>
                 <li><a href="#">Contact us</a></li>
             </ul>
-        </div>
-
-        <div class="content">
-            <h1>Cheval</h1>
-            <p>Cheval Collection is an award-winning hospitality group with twelve luxury all-apartment Residences in
-                London and Edinburgh, guaranteeing a warm welcome and an unforgettable living experience</p>
-        </div>
+        </nav>
+        <ul class="dots">
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+        </ul>
     </div>
 
+    <div class="container">
+        <div class="introduction">
+            <div class="hello-wrapper">
+                <h3 class="hello font-oswald">Hello, this is Cheval.</h3>
+                <p class="font-poppins intro-text">
+                    Cheval adalah salah satu brand sepatu lokal, hasil kolaborasi dari beberapa orang yang tergabung dalam kelompok 19. Kami selalu memperhatikan keinginan pasar ketika membuat desain. Dalam memproduksi, kami sangat memperhatikan bahan dari setiap barang.
+                </p>
+            </div>
+            <img src="assets/img/sc-about.png" alt="Foto sepatu" class="product-intro">
+        </div>
 
-    <!--bagian lengkap-->
-    <div class="section">
-        <div class="container">
-            <div class="konten-section">
-                <div class="title">
-                    <h1>About US</h1>
+        <div class="card mt">
+            <h5 class="products font-oswald">Our Products</h5>
+            <div class="showcase">
+                <div class="product-card bg-1">
+                    <img src="assets/img/sneakers.png" alt="Sneakers">
+                    <span class="font-poppins">SNEAKERS</span>
                 </div>
-                <div class="konten">
-                    <h3>Cheval, This is Cheval</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laudantium voluptas itaque quae
-                        aspernatur ea qui obcaecati esse officia nostrum, architecto quibusdam hic, dolorum enim
-                        doloremque totam temporibus inventore doloribus!</p>
+                <div class="product-card bg-2">
+                    <img src="assets/img/sporty-shoes.png" alt="Sporty Shoes">
+                    <span class="font-poppins">SPORTY SHOES</span>
+                </div>
+                <div class="product-card bg-2">
+                    <img src="assets/img/lowcanvas.png" alt="Low Canvas">
+                    <span class="font-poppins">LOW CANVAS</span>
+                </div>
+                <div class="product-card bg-2">
+                    <img src="assets/img/highcanvas.png" alt="High Canvas">
+                    <span class="font-poppins">HIGH CANVAS</span>
                 </div>
             </div>
-            <div class="img-selection">
-                <img src="gambar/sc-about.png">
+            <div class="mt categories">
+                <a href="#mens" class="mens font-roboto">MENS</a>
+                <a href="#womens" class="womens font-roboto">WOMENS</a>
+            </div>
+            <div class="mt flex-center">
+                <span>
+                    <a href="#more-products" class="more font-poppins">read more our catalog</a>...
+                </span>
+            </div>
+
+            <h5 class="products font-oswald mr">Testimonials</h5>
+            <div class="showcase">
+                <div class="testicard"></div>
+                <div class="testicard"></div>
+                <div class="testicard"></div>
+            </div>
+            <div class="mt flex-center">
+                <span>
+                    <a href="#more-testimony" class="more font-poppins">read more testimonial</a>...
+                </span>
             </div>
         </div>
+
+
+        
     </div>
 
+    <script>
+        window.addEventListener('scroll', function() {
+            var scroll = window.scrollY
+            var navbar = document.querySelector('.navbar')
+            if(scroll > 100) {
+                navbar.classList.add('bg-nav')
+            } else {
+                navbar.classList.remove('bg-nav')
+            }
+        })
+    </script>
+    
 </body>
 
 </html>
