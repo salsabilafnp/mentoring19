@@ -289,7 +289,7 @@ section .copyRight {
     }
 }
 
-@media (min-width:600px) {
+@media (max-width:770px) {
     section {
         padding: 50px 10px 10px;
     }
