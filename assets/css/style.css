@@ -80,11 +80,44 @@
 
 /* Carousel */
 .carousel-item {
-  height: 550px;
+  height: 100vh;
 }
 .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
-  height: 550px;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.rounded-lg {
+  border-radius: 40px !important;
+}
+
+.testi-card {
+  background: #EAE4D9 !important;
+  border: none !important;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  object-fit: cover !important;
+}
+
+.mr-2 {
+  margin-right: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.25rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
 }
