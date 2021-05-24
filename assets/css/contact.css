@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    top: 0;
     box-sizing: border-box;
 }
 
@@ -26,73 +27,11 @@
 body {
     background-color: #36535D;
 }
-
-.main {
-    width: 100%;
-    position: relative;
-}
-
 .bg-nav {
     background-color: #222c30;
 }
 
-nav.navbar {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 35px;
-}
 
-.brand {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.navbar ul {
-    display: none;
-    flex-direction: column;
-    padding: 5px;
-    list-style: none;
-}
-
-.navbar ul li {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-}
-
-.navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #009688;
-    margin-bottom: -5px;
-    transition: 0.2s;
-}
-
-.navbar ul li:hover::after {
-    width: 100%;
-}
-
-.navbar ul li a {
-    padding: 5px;
-    color: #eee;
-    text-decoration: none;
-}
-.dots {
-    position: absolute;
-    bottom: 35px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
 /* Contact */
 
 section {
@@ -116,6 +55,7 @@ section {
     justify-content: space-between;
     align-items: center;
     padding:  50px;
+    margin-top: 150px;
 }
 .content1 {
     max-width: 400px;
@@ -181,7 +121,7 @@ header a .contact {
 }
 .content2 ul li {
     list-style: none;
-    margin: 10px 80px;
+    margin: 10px 70px;
 }
 .content2 ul li a {
     top: -40px;
@@ -233,7 +173,7 @@ header a .contact1 {
 }
 .content3 ul li {
     list-style: none;
-    margin: 5px 74px;
+    margin: 5px 65px;
 }
 .content3 ul li {
     top: -40px;
@@ -251,45 +191,384 @@ section .copyRight {
     text-align: center;
 }
 
-@media (min-width: 600px) {
-    .navbar ul {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .container {
-        width: 80%;
-        margin: auto;
-        padding: 15px;
-    }
 
-    .introduction {
-        display: flex;
-        flex-direction: row;
+@media (max-width:992px) {
+    .content1 {
+        transform: translateX(100px);
     }
-
-    .hello-wrapper {
-        width: 50%;
-        margin-right: 20px;
-        margin-bottom: 0;
+    .text {
+        transform: translateX(180px);
+        padding-top: 400px;
+        margin-bottom: 100px;
     }
-
-    .showcase {
-        flex-direction: row;
+    .text h3 {
+        font-size: 30px;
     }
-
-    .testicard {
-        width: 250px;
-        margin-right: 25px;
+    .text p {
+        font-size: 20px;
     }
-
-    .product-card {
-        width: 150px;
-        margin-right: 25px;
+    .container2 {
+        margin-top: 400px;
+    }
+    header .contact {
+        font-size: 35px;
+        transform: translateX(235px);
+    }
+    .icon ul li {
+        margin: 3px 70px;
+        transform: translateX(-10px);
+    }
+    .icon ul li img {
+        width: 45px;
+    }
+    .content2 ul li {
+        margin: 3px 20px;
+    }
+    .content2 ul li a {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+    header .contact1 {
+        font-size: 35px;
+        transform: translateX(280px);
+    }
+    .icon1 ul li {
+        margin: 5px 60px;
+        transform: translateX(-10px);
+        font-size: 20px;
+    }
+    .icon1 ul li img {
+        width: 25px;
+    }
+    .content3 ul li {
+        margin: 3px 20px;
+    }
+    .content3 ul li {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+    .copyRight {
+        font-size: 16px;
+    }
+}
+@media (max-width:767px) {
+    .content1 {
+        transform: translateX(50px);
+    }
+    .text {
+        transform: translateX(125px);
+        padding-top: 400px;
+        margin-bottom: 100px;
+    }
+    .text h3 {
+        font-size: 25px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+    .container2 {
+        margin-top: 350px;
+    }
+    header .contact {
+        font-size: 30px;
+        transform: translateX(235px);
+    }
+    .icon ul li {
+        margin: 3px 65px;
+        transform: translateX(-10px);
+    }
+    .icon ul li img {
+        width: 35px;
+    }
+    .content2 ul li {
+        margin: 3px 15px;
+    }
+    .content2 ul li a {
+        font-size: 15px;
+        padding: 0 14px;
+    }
+    header .contact1 {
+        font-size: 30px;
+        transform: translateX(235px);
+    }
+    .icon1 ul li {
+        margin: 5px 55px;
+        transform: translateX(-10px);
+        font-size: 15px;
+    }
+    .icon1 ul li img {
+        width: 25px;
+    }
+    .content3 ul li {
+        margin: 3px 20px;
+    }
+    .content3 ul li {
+        font-size: 12px;
+        padding: 0 11px;
+    }
+    .copyRight {
+        font-size: 12px;
+    }
+}
+@media (max-width:600px) {
+    .content1 {
+        transform: translateX(-30px);
+    }
+    .text {
+        transform: translateX(50px);
+        padding-top: 400px;
+        margin-bottom: 100px;
+    }
+    .text h3 {
+        font-size: 27px;
+    }
+    .text p {
+        font-size: 20px;
+    }
+    .container2 {
+        margin-top: 350px;
+    }
+    header .contact {
+        font-size: 30px;
+        transform: translateX(135px);
+    }
+    .icon ul li {
+        margin: 3px 50px;
+        transform: translateX(-10px);
+    }
+    .icon ul li img {
+        width: 30px;
+    }
+    .content2 ul li {
+        margin: 3px 5px;
+    }
+    .content2 ul li a {
+        font-size: 12px;
+        padding: 0 12px;
+    }
+    header .contact1 {
+        font-size: 30px;
+        transform: translateX(135px);
+    }
+    .icon1 ul li {
+        margin: 3px 35px;
+        transform: translateX(-10px);
+        font-size: 16px;
+    }
+    .icon1 ul li img {
+        width: 25px;
+    }
+    .content3 ul li {
+        margin: 3px 5px;
+    }
+    .content3 ul li {
+        font-size: 12px;
+        padding: 0 12px;
+    }
+    .copyRight {
+        font-size: 12px;
+    }
+}
+@media (max-width:520px) {
+    .content1 {
+        transform: translateX(-60px);
+    }
+    .text {
+        transform: translateX(50px);
+        padding-top: 400px;
+        margin-bottom: 100px;
+    }
+    .text h3 {
+        font-size: 20px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .text a {
+        font-size: 16px;
+        padding: 0 16px;
+        border-radius: 5px;
+    }
+    .container2 {
+        margin-top: 350px;
+    }
+    header .contact {
+        font-size: 25px;
+        transform: translateX(135px);
+    }
+    .icon ul li {
+        margin: 3px 40px;
+        transform: translateX(-10px);
+    }
+    .icon ul li img {
+        width: 25px;
+    }
+    .content2 ul li {
+        margin: 3px 3px;
+    }
+    .content2 ul li a {
+        font-size: 10px;
+        padding: 0 8px;
+        border-radius: 5px;
+    }
+    header .contact1 {
+        font-size: 25px;
+        transform: translateX(135px);
+    }
+    .icon1 ul li {
+        margin: 3px 30px;
+        transform: translateX(-10px);
+        font-size: 15px;
+    }
+    .icon1 ul li img {
+        width: 25px;
+    }
+    .content3 ul li {
+        margin: 3px 5px;
+    }
+    .content3 ul li {
+        font-size: 10px;
+        padding: 0 8px;
+        border-radius: 5px;
+    }
+    .copyRight {
+        font-size: 10px;
+    }
+}
+@media (max-width:492px) {
+    .content1 {
+        transform: translateX(-88px);
+    }
+    .text {
+        transform: translateX(0);
+        padding-top: 400px;
+        margin-bottom: 100px;
+    }
+    .text h3 {
+        font-size: 20px;
+    }
+    .text p {
+        font-size: 15px;
+    }
+    .text a {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+    .container2 {
+        margin-top: 250px;
+    }
+    header .contact {
+        font-size: 30px;
+        transform: translateX(135px);
+    }
+    .icon ul li {
+        margin: 3px 50px;
+        transform: translateX(-10px);
+    }
+    .icon ul li img {
+        width: 25px;
+    }
+    .content2 ul li {
+        margin: 3px 8px;
+    }
+    .content2 ul li a {
+        font-size: 10px;
+        padding: 0 12px;
+    }
+    header .contact1 {
+        font-size: 30px;
+        transform: translateX(135px);
+    }
+    .icon1 ul li {
+        margin: 3px 30px;
+        transform: translateX(-10px);
+        font-size: 15px;
+    }
+    .icon1 ul li img {
+        width: 25px;
+    }
+    .content3 ul li {
+        margin: 3px 5px;
+    }
+    .content3 ul li {
+        font-size: 10px;
+        padding: 0 12px;
+    }
+    .copyRight {
+        font-size: 10px;
+    }
+}
+@media (max-width:375px) {
+    .content1 {
+        transform: translateX(-150px);
+        min-width: 50px;
+    }
+    .text {
+        transform: translateX(-25px);
+        padding-top: 400px;
+        margin-bottom: 100px;
+    }
+    .text h3 {
+        font-size: 12px;
+    }
+    .text p {
+        font-size: 10px;
+    }
+    .text a {
+        font-size: 10px;
+        padding: 0 15px;
+    }
+    .container2 {
+        margin-top: 250px;
+    }
+    header .contact {
+        font-size: 20px;
+        transform: translateX(100px);
+    }
+    .icon ul li {
+        margin: 3px 40px;
+        transform: translateX(-20px);
+    }
+    .icon ul li img {
+        width: 18px;
+    }
+    .content2 ul li {
+        margin: 3px 3px;
+    }
+    .content2 ul li a {
+        font-size: 8px;
+        padding: 0 8px;
+    }
+    header .contact1 {
+        font-size: 20px;
+        transform: translateX(100px);
+    }
+    .icon1 ul li {
+        margin: 3px 25px;
+        transform: translateX(-20px);
+        font-size: 12px;
+    }
+    .icon1 ul li img {
+        width: 18px;
+    }
+    .content3 ul li {
+        margin: 1px 1px;
+    }
+    .content3 ul li {
+        font-size: 8px;
+        padding: 0 8px;
+    }
+    .copyRight {
+        font-size: 7px;
     }
 }
 
-@media (max-width:640px) {
+/* @media (max-width:640px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        z-index: 1000;
+    }
     section {
         padding: 50px 10px 10px;
     }
@@ -380,18 +659,4 @@ section .copyRight {
     .copyRight {
         font-size: 12px;
     }
-}
-
-
-.bg-1 {
-    background-color: #CEB8A6;
-}
-.bg-2 {
-    background-color: #E9CCB1;
-}
-.bg-3 {
-    background-color: #EBCFC4;
-}
-.bg-4 {
-    background-color: #D3C4BE;
-}
+} */

@@ -6,23 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/icons/font/bootstrap-icons.css">
     <title>Cheval</title>
 </head>
 
 <body>
-    <div class="main">
-        <nav class="navbar">
-            <a href="/" class="brand font-oswald">
-                CHEVAL
-            </a>
-            <ul class="navigation font-poppins">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#contact">Contact us</a></li>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-main mx-auto">
+        <div class="container">
+          <span class="fw-bold fs-3 font-oswald align-middle navbar-brand">.CHEVAL</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav font-poppins fw-bold">
+              <a class="nav-item nav-link active page-scroll mx-4 text-decoration-underline" href="index.html">home</a>
+              <a class="nav-item nav-link page-scroll mx-4" href="product.html">product</a>
+              <a class="nav-item nav-link page-scroll mx-4" href="about.html">about</a>
+              <a class="nav-item nav-link page-scroll mx-4" href="contact.html">contact</a>
             </ul>
-        </nav>
-    </div>
+          </div>
+        </div>
+      </nav>
+
+      
     <section id="contact">
         <div class="container1">
             <div class="content1">
@@ -124,7 +132,8 @@
     <section>
         <p class="copyRight">© 2021 Cheval | Cheval is local brand for shoes, collaboration from mentoring group 19th.</p>
     </section>
-
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script>
         window.addEventListener('scroll', function() {
             var scroll = window.scrollY
