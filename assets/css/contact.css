@@ -57,8 +57,9 @@ section {
     padding:  50px;
     margin-top: 150px;
 }
-.content1 {
-    max-width: 400px;
+.content1 img {
+    width: 350px;
+    border-radius: 10px;
     transform: translateX(20px);
     animation: animate 5s linear infinite;
 }
@@ -194,10 +195,10 @@ section .copyRight {
 
 @media (max-width:992px) {
     .content1 {
-        transform: translateX(100px);
+        transform: translateX(180px);
     }
     .text {
-        transform: translateX(180px);
+        transform: translateX(235px);
         padding-top: 400px;
         margin-bottom: 100px;
     }
@@ -437,10 +438,13 @@ section .copyRight {
 }
 @media (max-width:492px) {
     .content1 {
-        transform: translateX(-88px);
+        transform: translateX(-60px);
+    }
+    .content1 img {
+        width: 280px;
     }
     .text {
-        transform: translateX(0);
+        transform: translateX(40px);
         padding-top: 400px;
         margin-bottom: 100px;
     }
@@ -455,44 +459,45 @@ section .copyRight {
         padding: 0 15px;
     }
     .container2 {
-        margin-top: 250px;
+        margin-top: 350px;
     }
     header .contact {
         font-size: 30px;
         transform: translateX(135px);
     }
     .icon ul li {
-        margin: 3px 50px;
+        margin: 3px 45px;
         transform: translateX(-10px);
     }
     .icon ul li img {
-        width: 25px;
+        width: 20px;
     }
     .content2 ul li {
-        margin: 3px 8px;
+        margin: 3px 5px;
     }
     .content2 ul li a {
         font-size: 10px;
-        padding: 0 12px;
+        padding: 0 8px;
+        border-radius: 5px;
     }
     header .contact1 {
         font-size: 30px;
         transform: translateX(135px);
     }
     .icon1 ul li {
-        margin: 3px 30px;
+        margin: 3px 25px;
         transform: translateX(-10px);
-        font-size: 15px;
+        font-size: 14px;
     }
     .icon1 ul li img {
         width: 25px;
     }
     .content3 ul li {
-        margin: 3px 5px;
+        margin: 3px 3px;
     }
     .content3 ul li {
         font-size: 10px;
-        padding: 0 12px;
+        padding: 0 8px;
     }
     .copyRight {
         font-size: 10px;
@@ -562,123 +567,3 @@ section .copyRight {
         font-size: 7px;
     }
 }
-
-<<<<<<< HEAD
-/* @media (max-width:640px) {
-    .navbar ul {
-        display: flex;
-        flex-direction: row;
-        z-index: 1000;
-    }
-=======
-@media (max-width:570px) {
->>>>>>> 62c3764a02211e8dac97251396d06aac456af0b7
-    section {
-        padding: 50px 10px 10px;
-    }
-    .container1 {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-    .container1 .content1 {
-        transform: translateX(0px);
-        max-width: 100%;
-        padding: 30px;
-        margin-top: 40px;
-    }
-    .text {
-        transform: translateX(0);
-        padding-top: 400px;
-        margin-bottom: 50px;
-    }
-    .text h3 {
-        font-size: 1.5em;
-        color: #fdfcfa;
-    }
-    .text p {
-        font-size: 1em;
-        color: #eae4d9;
-    }
-    .container2 {
-        flex-direction: column;
-        height: auto;
-    }
-    .container2 .content2 {
-        transform: translateX(0px);
-        max-width: 100%;
-        padding: 30px;
-        margin-top: 40px;
-    }
-    header .contact {
-        padding-top: 250px;
-        transform: translateX(130px);
-    }
-    .icon {
-      padding-top: 50px;
-    }
-    .icon ul li {
-        margin: 5px 58px;
-        transform: translateX(10px);
-    }
-    .icon ul li img {
-        width: 30px;
-    }
-    .content2 ul li {
-        margin: 3px 30px;
-    }
-    .content2 ul li a {
-        font-size: 10px;
-    }
-    .container3 {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-    .container3 .content3 {
-        transform: translateX(0px);
-        max-width: 100%;
-        padding: 30px;
-        margin-top: 40px;
-    }
-    header .contact1 {
-        transform: translateX(155px);
-    }
-    .icon1 {
-      padding-top: 50px;
-    }
-    .icon1 ul li {
-        margin: 5px 35px;
-        transform: translateX(5px);
-    }
-    .icon1 ul li {
-        font-size: 16px;
-    }
-    .content3 ul li {
-        margin: 3px 20px;
-    }
-    .content3 ul li {
-        font-size: 12px;
-    }
-    .copyRight {
-        font-size: 12px;
-    }
-<<<<<<< HEAD
-} */
-=======
-}
-
-
-.bg-1 {
-    background-color: #CEB8A6;
-}
-.bg-2 {
-    background-color: #E9CCB1;
-}
-.bg-3 {
-    background-color: #EBCFC4;
-}
-.bg-4 {
-    background-color: #D3C4BE;
-}
->>>>>>> 62c3764a02211e8dac97251396d06aac456af0b7
