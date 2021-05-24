@@ -563,12 +563,16 @@ section .copyRight {
     }
 }
 
+<<<<<<< HEAD
 /* @media (max-width:640px) {
     .navbar ul {
         display: flex;
         flex-direction: row;
         z-index: 1000;
     }
+=======
+@media (max-width:570px) {
+>>>>>>> 62c3764a02211e8dac97251396d06aac456af0b7
     section {
         padding: 50px 10px 10px;
     }
@@ -659,4 +663,22 @@ section .copyRight {
     .copyRight {
         font-size: 12px;
     }
+<<<<<<< HEAD
 } */
+=======
+}
+
+
+.bg-1 {
+    background-color: #CEB8A6;
+}
+.bg-2 {
+    background-color: #E9CCB1;
+}
+.bg-3 {
+    background-color: #EBCFC4;
+}
+.bg-4 {
+    background-color: #D3C4BE;
+}
+>>>>>>> 62c3764a02211e8dac97251396d06aac456af0b7
