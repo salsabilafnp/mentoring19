@@ -1,10 +1,10 @@
-window.addEventListener('scroll', function(e) {
+window.addEventListener('scroll', function (e) {
     var current = window.scrollY
     if (current >= 200) {
-        document.querySelector('.navbar').classList.add('bg-main')
-        document.querySelector('.navbar').classList.remove('bg-transparent')
+        document.querySelector('.nav-main').classList.add('bg-main')
+        document.querySelector('.nav-main').classList.remove('bg-transparent')
     } else {
-        document.querySelector('.navbar').classList.remove('bg-main')
-        document.querySelector('.navbar').classList.add('bg-transparent')
+        document.querySelector('.nav-main').classList.remove('bg-main')
+        document.querySelector('.nav-main').classList.add('bg-transparent')
     }
 })
